@@ -17,7 +17,7 @@ while True:
     for (x,y,w,h) in faces:
         frame = cv.rectangle(frame, (x,y), (x+w, y+h), (255,0,0), 2)
 
-    cv.imshow('Capturing', frame)
+    cv.imshow('Capturing', cv.flip(frame,1))
     key = cv.waitKey(1)
 
     if key == ord('q'):
