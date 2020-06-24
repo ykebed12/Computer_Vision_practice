@@ -1,5 +1,4 @@
 import cv2 as cv
-import time
 
 # Load the video
 video = cv.VideoCapture(0)
